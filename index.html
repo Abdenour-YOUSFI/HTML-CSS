@@ -10,7 +10,7 @@
     <header class="header"> 
     <nav> <!--creer un menu-->
         <ul> <!---creer une listen non odonée-->
-            <li> <a href="#">Accueil</a></li>
+            <li> <a href="#">Accueil</a></li> <!--creer un element dans un menu avec un lien-->
             <li> <a href="#">a propos</a></li>
             <li> <a href="#"> nos services</a></li>
             <li><a href="#">contacter nous</a></li>
@@ -24,13 +24,16 @@
     </div>
     <section id="a_propos">
         <h2> a propos de nous</h2>
-        <div class="about_image">
-            <img src="./assets/image.png" alt="image de notre hotel">
-
+        <div class="about_container">
+            <div class="about_image">
+                <img src="./assets/image.png" alt="image de notre hotel">
+    
+            </div>
+            <div class="about_text">
+                <p>bienvenue a l'hotel full stack un lieu de detente ultime au coeur de la nature profiter de nos chambresluxeuses et de notre service exeptionel pour des vacances inoubliables </p>
+            </div>
         </div>
-        <div class="about_text">
-            <p>bienvenue a l'hotel full stack un lieu de detente ultime au coeur de la nature profiter de nos chambresluxeuses et de notre service exeptionel pour des vacances inoubliables </p>
-        </div>
+       
         
 
     </section>
@@ -40,12 +43,40 @@
             <div class="about_text">
                 <p>bienvenue a l'hotel full stack un lieu de detente ultime au coeur de la nature profiter de nos chambresluxeuses et de notre service exeptionel pour des vacances inoubliables </p>
             </div>
-        </div>
-        <div class="about image">
+        
+        <div class="about_image">
             <img src="./assets/image copy.png" alt="image de notre hotel">
         </div>
 
+    </div>
+
     </section>
+    <section id="contact">
+        <h2>contacter nous</h2>
+        <form action="#" method="post"> 
+            <label for="name"> Name:</label>
+            <input type="text" id="name" placeholder="entrer votre nom"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="entrer votre email"><br><br>
+            <label for="phone">phone</label>
+            <input type="text" id="phone" placeholder="entrer votre num de tel"><br><br>
+            <label for="message">message</label>
+            <textarea name="message" id="message" cols="50" rows="5" placeholder="taper votre message"></textarea><br><br>
+            <label for="sexe">sexe:</label>
+            <input type="radio" id="homme" value="homme" name="sexe">
+            <label for="homme">homme</label>
+            <input type="radio" id="femme" value="femme" name="sexe">
+            <label for="homme">femme</label><br><br>           
+            <input type="submit" value="envoyer"/>
+            
+
+        </form>
+    </section>
+    <footer>
+        <p>&copy;2024 mon hotel. tous droits reservés</p>
+
+    </footer>
+
 
 </body>
 </html>
