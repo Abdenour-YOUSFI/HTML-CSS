@@ -70,4 +70,48 @@ h2{
 width: 100%;
 height: auto;
 }
+form{
+    max-width: 400px;  /* pour ne pas depasser la taille du formulaire */
+    margin: 0 auto; /* le "0" pour la marge du haut en bas alors que "auto" pour centraliser notre  formulaire */
+    padding: 60px;
+    border: 1px solid rgb(0, 0, 0);/*pour la bodeur du formulaire*/
+    background-color: whitesmoke; /*  */
+    box-shadow: 2px 3px 5px black; /**/
+    
+}
+label{
+    display: block;/* pour qu'il prend toute la ligne le premier element*/
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"] , input[type="email"],input[type="phone"],input[type="textarea"]{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+input [type="radio"]{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.rad{
+    display: flex;
+    justify-content: center;
+
+}
+
+input[type="submit"]{
+    width: auto;
+    padding: 10px 20px ;
+    margin: 0 auto;
+    background-color: bisque;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    color: black;
+}
 
